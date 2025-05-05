@@ -1,0 +1,79 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Signup Servlet -->
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>controller.SignupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Dashboard Servlet -->
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>controller.DashboardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+</welcome-file-list>
+
+    <!-- Add Product Servlet -->
+<servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>controller.AddProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/AddProductServlet</url-pattern>
+</servlet-mapping>
+<!-- Edit Product Servlet -->
+<servlet>
+    <servlet-name>EditProductServlet</servlet-name>
+    <servlet-class>controller.EditProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EditProductServlet</servlet-name>
+    <url-pattern>/EditProductServlet</url-pattern>
+</servlet-mapping>
+
+<!-- Delete Product Servlet -->
+<servlet>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>controller.DeleteProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/DeleteProductServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+</web-app>
